@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutik Badhe - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">RB</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="my.jpg" alt="Rutik Badhe">
+            </div>
+            <div class="text-content">
+                <h1>Rutik Badhe</h1>
+                <div class="typed-text">Full Stack Developer</div>
+                <div class="social-links">
+                    <a href="https://github.com/rutik0007" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/rutik0007" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                    <a href="resume.pdf" class="cta-button secondary" >
+                        <i class="fas fa-download"></i> View Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="intro-text">👋 Hello! I'm <span class="highlight">Rutik Badhe</span>, an ambitious Full Stack Developer with a passion for crafting exceptional digital experiences. I blend creativity with technical expertise to build innovative web solutions that make a real difference.</p>
+                
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="highlight-content">
+                            <h3>Education</h3>
+                            <p>Currently pursuing Computer Science with outstanding academic performance, consistently maintaining top grades.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <i class="fas fa-code"></i>
+                        <div class="highlight-content">
+                            <h3>Development Focus</h3>
+                            <p>Specialized in full-stack web development, with expertise in both frontend and backend technologies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <i class="fas fa-award"></i>
+                        <div class="highlight-content">
+                            <h3>Achievements</h3>
+                            <p>Academic Topper 2024, certified in JavaScript and Project Management, active participant in technical symposiums.</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-item">
+                        <i class="fas fa-bullseye"></i>
+                        <div class="highlight-content">
+                            <h3>My Goals</h3>
+                            <p>Aspiring to master advanced technologies, contribute to innovative projects, and become a proficient Full Stack Developer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3 class="category-title">Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="90%"></div>
+                        </div>
+                        <div class="sub-skills">
+                            <span>Semantic HTML</span>
+                            <span>Accessibility</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="85%"></div>
+                        </div>
+                        <div class="sub-skills">
+                            <span>Flexbox</span>
+                            <span>Grid</span>
+                            <span>Animations</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="80%"></div>
+                        </div>
+                        <div class="sub-skills">
+                            <span>ES6+</span>
+                            <span>DOM</span>
+                            <span>Async/Await</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Backend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="sub-skills">
+                            <span>Numpy</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="sub-skills">
+                            <span>Core concepts</span>
+                            <span>JDBC</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-php"></i>
+                        <h3>PHP</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="sub-skills">
+                            <span>PhpMyAdmin</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="sub-skills">
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Development Tools</h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <i class="fas fa-code"></i>
+                        <h3>VS Code</h3>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Cursor</h3>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Anaconda Navigator</h3>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fas fa-coffee"></i>
+                        <h3>Eclipse</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement Badges Section -->
+    <section id="achievements" class="achievements">
+        <h2>Achievements</h2>
+        <div class="badges-container">
+            <div class="badge-card">
+                <div class="badge-icon">
+                    <i class="fas fa-scroll"></i>
+                </div>
+                <h3>Research Paper Publication</h3>
+                <p>Published a review paper in IJARSCT (International Journal of Advanced Research in Science, Communication and Technology)</p>
+                <div class="badge-date">2024</div>
+                <a href="https://www.ijarsct.co.in/Paper23278.pdf" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i> View Paper
+                </a>
+            </div>
+
+            <div class="badge-card">
+                <div class="badge-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Academic Topper 2024</h3>
+                <p>Achieved top academic performance in the program</p>
+                <div class="badge-date">January 2025</div>
+            </div>
+
+            <div class="badge-card">
+                <div class="badge-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>JavaScript Certification</h3>
+                <p>Core concepts of JavaScript</p>
+                <div class="badge-date">February 2025</div>
+            </div>
+
+            <div class="badge-card">
+                <div class="badge-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Participation in TechnoPhilia</h3>
+                <p>Participated in technical symposium showcasing innovative projects</p>
+                <div class="badge-date">October 2024</div>
+            </div>
+
+            <div class="badge-card">
+                <div class="badge-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>Project Management Certification</h3>
+                <p>Completed certification in project management methodologies</p>
+                <div class="badge-date">February 2025</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="IQ2.jpg" alt="IQ Test Project">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://project-iq-test-online.vercel.app/" target="_blank" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/rutik0007/Project-IQ-Test-Online" target="_blank" class="code-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>IQ Test Application</h3>
+                    <p>An interactive IQ test application that helps users assess their cognitive abilities through various types of questions and provides detailed results and analysis.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Hams1.jpeg" alt="Hospital Appointment System">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://project-hospital-appointment-management-system-e481.vercel.app/" target="_blank" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/rutik0007/Project-Hospital-Appointment-Management-System" target="_blank" class="code-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Hospital Appointment System</h3>
+                    <p>A comprehensive hospital appointment management system that allows patients to book appointments online, manage their medical records, and communicate with healthcare providers.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h3 id="modalTitle"></h3>
+                </div>
+                <div class="modal-gallery">
+                    <div class="gallery-main">
+                        <img id="modalMainImage" src="" alt="">
+                    </div>
+                    <div class="gallery-thumbs" id="modalThumbs"></div>
+                </div>
+                <div class="modal-details">
+                    <div class="project-tech">
+                        <h4>Technologies Used</h4>
+                        <div class="tech-stack" id="modalTechStack"></div>
+                    </div>
+                    <div class="project-description">
+                        <h4>Project Description</h4>
+                        <p id="modalDescription"></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" id="modalLiveDemo" class="btn" target="_blank">Live Demo</a>
+                        <a href="#" id="modalSourceCode" class="btn" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <form id="contactForm" onsubmit="sendEmail(event)">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <div class="loading-spinner"></div>
+                </button>
+                <div class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rutik Badhe. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_USER_ID");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
